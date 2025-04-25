@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import SpeedInsights from "@vercel/speed-insights/astro";
 import { useTranslations } from "@/i18n";
+import Analytics from "@vercel/analytics/astro";
 
 const t = useTranslations();
 
@@ -32,6 +33,7 @@ type Props = {
   >
     <SectionContainer>
       <SpeedInsights />
+      <Analytics />
       <div class="flex h-screen flex-col justify-between font-sans">
         <Header />
         <main class="mb-auto">
