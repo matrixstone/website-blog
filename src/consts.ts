@@ -101,9 +101,11 @@ export const ITEMS_PER_PAGE = 5;
 export const NAVIGATION = [
   { href: "/", title: "nav.home" },
   { href: "/blog", title: "nav.blog" },
-  { href: "/tags", title: "nav.tags" },
-  { href: "/projects", title: "nav.projects" },
+  // { href: "/blog", title: "nav.blog" },
   { href: "/about", title: "nav.about" },
+  { href: "/tags", title: "nav.tags" },
+  // { href: "/projects", title: "nav.projects" },
+  
 ] as const;
 
 export const POST_METADATA = {

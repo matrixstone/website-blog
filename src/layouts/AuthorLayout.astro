@@ -33,7 +33,7 @@ const authorPosts = await getCollection(
   "blog",
   ({ data: { authors, draft } }) => {
     return !draft && authors.some((author) => author.slug === Astro.props.slug);
-  }
+  },
 )
   .then(sortBlogPosts)
   .then((posts) => {
@@ -56,7 +56,7 @@ const authorPosts = await getCollection(
       class="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"
     >
       <div class="flex flex-col items-center space-x-2 pt-8">
-        {
+        <!-- {
           avatar && (
             <Image
               src={avatar}
@@ -69,9 +69,9 @@ const authorPosts = await getCollection(
         }
         <h2 class="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">
           {name}
-        </h2>
-        <div class="text-gray-500 dark:text-gray-400">{occupation}</div>
-        <div class="text-gray-500 dark:text-gray-400">{company}</div>
+        </h2> -->
+        <!-- <div class="text-gray-500 dark:text-gray-400">{occupation}</div>
+        <div class="text-gray-500 dark:text-gray-400">{company}</div> -->
         <div class="flex space-x-3 pt-6">
           {email && <SocialIcon kind="mail" href={`mailto:${email}`} />}
           {github && <SocialIcon kind="github" href={github} />}

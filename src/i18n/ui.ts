@@ -5,11 +5,11 @@ export const ui = {
     // Site Metadata
     'siteMetadata.title': 'Deepseek Explain and Information',
     'siteMetadata.headerTitle': 'About Deepseek',   
-    'siteMetadata.description': 'Explain Deepseek innovative approach includes training models on less advanced hardware challenging the traditional reliance on expensive infrastructure in AI development',
+    'siteMetadata.description': 'DeepSeek is an innovative AI research organization focused on advancing large language models and generative AI technologies. What Makes DeepSeek Stand Out Among AI Giants Like OpenAI and Anthropic? Read to learn more.',
     'siteMetadata.language': 'en-US',
 
     // Pages
-    'pages.home.latestPosts': 'Deepseek Posts',
+    'pages.home.latestPosts': 'Deepseek AI',
     'pages.home.viewAllPosts': 'View all posts',
     'pages.home.noPosts': 'No posts found',
     'pages.home.readMoreAbout': 'Read more about {title}',
@@ -23,7 +23,7 @@ export const ui = {
     'pages.projects.description': 'All projects',
     'pages.projects.allProjects': 'All projects',
     'pages.projects.showcase': 'Showcase your projects',
-    'pages.blog.title': 'Blog',
+    'pages.blog.title': 'Articles',
     'pages.blog.description': 'All blog posts',
     'pages.404.title': '404 - Not Found',
     'pages.404.description': 'The page you are looking for does not exist.',
@@ -42,7 +42,7 @@ export const ui = {
 
     // Navigation
     'nav.home': 'Home',
-    'nav.blog': 'Blog',
+    'nav.blog': 'Articles',
     'nav.projects': 'Projects',
     'nav.tags': 'Tags',
     'nav.about': 'About',
