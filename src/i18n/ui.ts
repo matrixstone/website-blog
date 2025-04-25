@@ -3,13 +3,13 @@ export const defaultLang = 'en' as const;
 export const ui = {
   'en': {
     // Site Metadata
-    'siteMetadata.title': 'Astro Starter Blog',
-    'siteMetadata.headerTitle': 'Astro Starter Blog',   
-    'siteMetadata.description': 'A blog created with Astro and Tailwind.css',
+    'siteMetadata.title': 'Deepseek Explain and Information',
+    'siteMetadata.headerTitle': 'About Deepseek',   
+    'siteMetadata.description': 'Explain Deepseek innovative approach includes training models on less advanced hardware challenging the traditional reliance on expensive infrastructure in AI development',
     'siteMetadata.language': 'en-US',
 
     // Pages
-    'pages.home.latestPosts': 'Latest posts',
+    'pages.home.latestPosts': 'Deepseek Posts',
     'pages.home.viewAllPosts': 'View all posts',
     'pages.home.noPosts': 'No posts found',
     'pages.home.readMoreAbout': 'Read more about {title}',
