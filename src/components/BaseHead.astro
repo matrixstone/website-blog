@@ -52,7 +52,7 @@ if (article?.cover) {
   });
 } else {
   const importedOgImage = await import(`../assets/og-image.png`).then(
-    (m) => m.default
+    (m) => m.default,
   );
   openGraphImage = await getImage({
     src: importedOgImage,
@@ -137,6 +137,7 @@ const isProduction = import.meta.env.PROD;
       }),
     }}
   />
+  <link rel="sitemap" href="/sitemap-index.xml" />
   {isProduction && <Analytics />}
   <ViewTransitions />
 </head>
