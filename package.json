@@ -17,6 +17,7 @@
     "@astrojs/solid-js": "^4.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/onest": "^5.0.2",
+    "@vercel/speed-insights": "^1.2.0",
     "astro": "^4.3.5",
     "astro-meta-tags": "^0.2.1",
     "astro-robots-txt": "^1.0.0",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10"
+    "@tailwindcss/typography": "^0.5.10",
+    "vite": "^6.3.3"
   }
 }

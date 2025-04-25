@@ -4,7 +4,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-
+import SpeedInsights from "@vercel/speed-insights/astro";
 import { useTranslations } from "@/i18n";
 
 const t = useTranslations();
@@ -31,6 +31,7 @@ type Props = {
     class="bg-white text-black antialiased dark:bg-gray-950 dark:text-white"
   >
     <SectionContainer>
+      <SpeedInsights />
       <div class="flex h-screen flex-col justify-between font-sans">
         <Header />
         <main class="mb-auto">
