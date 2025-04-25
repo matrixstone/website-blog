@@ -5,8 +5,8 @@
  */
 export const SITE_METADATA = {
   theme: "system", // Options: system, light, dark
-  siteUrl: "https://tasb.yon.fun/",
-  siteRepo: "https://github.com/wanoo21/tailwind-astro-starting-blog",
+  siteUrl: "https://blog-beta-eight-33.vercel.app/",
+  siteRepo: "https://github.com/matrixstone/website-blog",
   robots: "index, follow", // Options: index, noindex, follow, nofollow
 
   // These are not supported yet
@@ -15,7 +15,7 @@ export const SITE_METADATA = {
       site: "", // Add your site id here
       src: "https://cdn.usefathom.com/fathom.js",
     },
-    googleAnalyticsId: null, // Add your Google Analytics id here
+    googleAnalyticsId: 11035392337, // Add your Google Analytics id here
     metricalApp: null, // Add your Metrical app here
     plausible: {
       domain: "", // Add your domain here
