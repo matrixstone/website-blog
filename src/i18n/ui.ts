@@ -5,7 +5,7 @@ export const ui = {
     // Site Metadata
     'siteMetadata.title': 'Deepseek Explain and Information',
     'siteMetadata.headerTitle': 'About Deepseek',   
-    'siteMetadata.description': 'DeepSeek is an innovative AI research organization focused on advancing large language models and generative AI technologies. What Makes DeepSeek Stand Out Among AI Giants Like OpenAI and Anthropic? Read to learn more.',
+    'siteMetadata.description': 'DeepSeek, developed by DeepSeek AI, is a leading Chinese AI research organization dedicated to advancing large language models and generative AI technologies. They introduced the groundbreaking DeepSeek R1 model, which offers chat capabilities comparable to top American competitors, including OpenAI ChatGPT, Meta LLaMA, and Google Gemini. What sets DeepSeek apart from AI giants like OpenAI and Anthropic? Read on to discover more.',
     'siteMetadata.language': 'en-US',
 
     // Pages
@@ -38,7 +38,7 @@ export const ui = {
     'components.listPostCover.publishedAt': 'Published at',
     'components.pagination.previous': 'Previous',
     'components.pagination.next': 'Next',
-    'components.socialShareButtons.sharing': 'Sharing is caring!',
+    'components.socialShareButtons.sharing': ' ',
 
     // Navigation
     'nav.home': 'Home',
