@@ -1,0 +1,148 @@
+---
+title: 'How to use DeepSeek API:  🚀 Getting Started with the DeepSeek API'
+summary: The DeepSeek API provides access to Deepseek R1 and Zero, cutting-edge language models designed for reasoning, coding, and general chat tasks. Whether you're a developer, researcher, or business user, this guide walks you through how to generate an API key, authenticate requests, select the appropriate model, and make your first API call. With clear examples and links to resources, you'll be up and running with DeepSeek in minutes.
+postLayout: simple
+date: '2025-04-16'
+cover: '@/assets/api.png'
+tags: [deepseek_api, deepseek, ai, deepseek_r1, deepseek_ai]
+---
+
+## 📥 Model Downloads
+
+DeepSeek models are freely available for download. You can host and run them on your own infrastructure. Below are the available versions and their resources:
+
+---
+
+### 🔹 DeepSeek-R1 Models
+
+| Model               | Total Params | Activated Params | Context Length | Download        |
+|---------------------|--------------|------------------|----------------|-----------------|
+| DeepSeek-R1-Zero    | 671B         | 37B              | 128K           | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1-Zero) |
+| DeepSeek-R1         | 671B         | 37B              | 128K           | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1) |
+
+> **Note:** Both `DeepSeek-R1-Zero` and `DeepSeek-R1` are trained on the `DeepSeek-V3-Base`.  
+> For detailed architecture information, please refer to the [DeepSeek-V3 repository](https://github.com/deepseek-ai/DeepSeek-V3).
+
+---
+
+### 🔹 DeepSeek-R1-Distill Models
+
+| Model                               | Base Model              | Download        |
+|-------------------------------------|--------------------------|-----------------|
+| DeepSeek-R1-Distill-Qwen-1.5B       | Qwen2.5-Math-1.5B        | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) |
+| DeepSeek-R1-Distill-Qwen-7B         | Qwen2.5-Math-7B          | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B) |
+| DeepSeek-R1-Distill-Llama-8B        | Llama-3.1-8B             | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B) |
+| DeepSeek-R1-Distill-Qwen-14B        | Qwen2.5-14B              | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B) |
+| DeepSeek-R1-Distill-Qwen-32B        | Qwen2.5-32B              | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B) |
+| DeepSeek-R1-Distill-Llama-70B       | Llama-3.3-70B-Instruct   | 🤗 [HuggingFace](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B) |
+
+> **Note:** The `DeepSeek-R1-Distill` models are fine-tuned versions of open-source models using output samples from DeepSeek-R1.  
+> Some configurations and tokenizers have been modified—please use DeepSeek’s provided settings for proper deployment.
+
+## Deepseek Open Platform
+
+At same time you can access deepseek through Deepseek open platform.
+
+
+## 🔐 Step 1: Get an API Key
+
+1. Go to the [DeepSeek Open Platform](https://platform.deepseek.com).
+2. Sign up or log in.
+3. Navigate to **"API Keys"** from the sidebar.
+4. Click **"Create API Key"**, name it if desired, and **copy** the key securely.
+   > ⚠️ You’ll only see the key once, so make sure to store it safely.
+
+---
+
+## 🔧 Step 2: Set Up Authentication
+
+Use Bearer Token authentication in your HTTP headers:
+
+- HTTP Header:
+  ```http
+   Authorization: Bearer YOUR_API_KEY
+   ```
+
+- API Endpoint:
+
+  ```
+  https://api.deepseek.com/v1/chat/completions
+  ```
+Ensure you include the Authorization header in all your API requests
+
+## 🧠Step 3: Choose a Model
+
+DeepSeek offers two primary models:​
+
+- deepseek-chat (V3): A general-purpose model trained on extensive text data, suitable for a wide range of tasks.
+
+- deepseek-reasoner (R1): Optimized for advanced reasoning, mathematics, and coding tasks. ​
+Learn R, Python & Data Science Online
+
+Specify your chosen model in the model parameter of your API request.​
+
+## 💻 Step 4: Make an API Call (Python Example)
+Here's how to make a basic API call using Python:
+```import requests
+
+url = "https://api.deepseek.com/v1/chat/completions"
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY",
+    "Content-Type": "application/json"
+}
+data = {
+    "model": "deepseek-chat",
+    "messages": [{"role": "user", "content": "Hello, DeepSeek!"}]
+}
+
+response = requests.post(url, headers=headers, json=data)
+print(response.json())
+```
+
+Replace `YOUR_API_KEY` with your actual API key.
+
+## 🧪 Step 5: Test with Tools like Apidog
+For testing and debugging, you can use tools like Apidog:​
+
+1. Install Apidog and create a new API request.
+
+2. Set the HTTP method to POST.
+
+3. Enter the API endpoint: https://api.deepseek.com/v1/chat/completions.
+
+4. Configure headers:
+
+   1. Authorization: Bearer YOUR_API_KEY
+
+   2. Content-Type: application/json
+
+5. Add the request body in JSON format:
+```
+{
+  "model": "deepseek-chat",
+  "messages": [{"role": "user", "content": "Hello, DeepSeek!"}]
+}
+```
+6. Send the request and observe the response. 
+
+## 📚 Additional Resources
+
+Here are some useful links to learn more about DeepSeek and its ecosystem:
+
+- [🔗 DeepSeek GitHub Repository](https://github.com/deepseek-ai)  
+  Access source code, model weights, and documentation for DeepSeek models.
+
+- [🔗 DeepSeek-R1 Evaluation](https://github.com/deepseek-ai/DeepSeek-R1?tab=readme-ov-file#deepseek-r1-evaluation)  
+  Detailed benchmarks comparing DeepSeek-R1 with other LLMs like GPT-4o.
+
+- [🔗 DeepSeek V2 & V3 Models](https://github.com/deepseek-ai/DeepSeek-V2)  
+  Explore previous versions of DeepSeek, including improvements in architecture and capabilities.
+
+- [🔗 DeepSeek Open Platform](https://platform.deepseek.com)  
+  Sign up to generate API keys, manage usage, and access model endpoints.
+
+- [🔗 HuggingFace DeepSeek Models](https://huggingface.co/deepseek-ai)  
+  Download models for offline or on-premise use.
+
+- [🔗 DeepSeek on X (Twitter)](https://twitter.com/DeepSeek_AI)  
+  Follow for updates, community news, and release announcements.
