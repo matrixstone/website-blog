@@ -88,7 +88,7 @@ export const SITE_METADATA = {
 /**
  * Default posts per page for pagination.
  */
-export const ITEMS_PER_PAGE = 5;
+export const ITEMS_PER_PAGE = 50;
 
 
 /**
